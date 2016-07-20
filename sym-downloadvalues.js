@@ -42,7 +42,6 @@
         }
 
         scope.download = function() {
-            onUpdate();
             var datacsv = new Blob([scope.contents]);
             container.href = URL.createObjectURL(datacsv);
         };
